@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S3 P1 - Valeurs</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+    
+    <header>
+        <div class="menu">
+            <a alt="Retour à l'Accueil" ><img class="logo" src="VonNeumann.jpg" onclick="window.location.replace('index.html')"></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">ACCUEIL</a></li>
+                    <li><a href="infos.html">INFOS</a></li>
+                    <li><a href="graphs.html">GRAPHIQUES</a></li>
+                    <li><a href="#">VALEURS</a></li>
+                    <li><a href="code.html">CODE</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="table100 ver3 m-b-110">
+        <div class="table100-head">
+            <table>
+                <thead>
+                    <tr class="row100 head">
+                        <th class="cell100 column1">Fonction</th>
+                        <th class="cell100 column2">Objectif</th>
+                        <th class="cell100 column3">Résultat</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    
+        <div class="table100-body js-pscroll" id="tableau">
+            <table>
+                <tbody>
+                    <tr class="row100 body">
+                        <td class="cell100 column1">Pression atmosphérique</td>
+                        <td class="cell100 column2">Renvoie la pression pour une altitude donnée (49m)</td>
+                        <td class="cell100 column3">1007,36 hPa</td>
+                    </tr>
+    
+                    <tr class="row100 body">
+                        <td class="cell100 column1">Température Kelvin</td>
+                        <td class="cell100 column2">Convertie en Kelvin une température donnée (16°C)</td>
+                        <td class="cell100 column3">289,15 K</td>
+                    </tr>
+    
+                    <tr class="row100 body">
+                        <td class="cell100 column1">Pression partielle de vapeur saturante</td>
+                        <td class="cell100 column2">Retourne la pression partielle de vapeur saturante pour une température et altitude donnée (16°C, 49m)</td>
+                        <td class="cell100 column3">18,32 hPa</td>
+                    </tr>
+
+                    <tr class="row100 body">
+                        <td class="cell100 column1">Vitesse du son</td>
+                        <td class="cell100 column2">Retourne la vitesse du son pour une température, altitude et le taux d'humidité donnée (16°C, 49m, 75%)</td>
+                        <td class="cell100 column3">340,57 m/s</td>
+                    </tr>
+
+                    <tr class="row100 body">
+                        <td class="cell100 column1">Masse volumique de l'air</td>
+                        <td class="cell100 column2">Retourne la masse volumique de l'air pour une température, altitude et le taux d'humidité donnée (16°C, 49m, 75%)</td>
+                        <td class="cell100 column3">1,207 kg/m<sup style="vertical-align:super;font-size: smaller;">3</sup></td>
+                    </tr>
+
+                    <tr class="row100 body">
+                        <td class="cell100 column1">Energie cinétique utile en translation</td>
+                        <td class="cell100 column2">Retourne l’énergie cinétique utile en translation grâce aux charactéristiques du projectile</td>
+                        <td class="cell100 column3">196 J</td>
+                    </tr>
+
+                    <tr class="row100 body">
+                        <td class="cell100 column1">Vitesse initiale</td>
+                        <td class="cell100 column2">Retourne la vitesse à la bouche du canon grâce aux charactéristiques du projectile</td>
+                        <td class="cell100 column3">389,04 m/s</td>
+                    </tr>
+
+                    <tr class="row100 body">
+                        <td class="cell100 column1">Densité de section</td>
+                        <td class="cell100 column2">Retourne la densité de section grâce pour une masse et un diamètre du projectile donnée (2,59g &nbsp; 5,58mm)</td>
+                        <td class="cell100 column3">0,118 g/mm</td>
+                    </tr>
+
+                    <tr class="row100 body">
+                        <td class="cell100 column1">Coefficient balistique CSV</td>
+                        <td class="cell100 column2">Retourne le coefficient balistique du modèle pour une vitesse donnée</td>
+                        <td class="cell100 column3"><a href="code.html#coef_bal_csv">Voir le code</a></td>
+                    </tr>
+
+                    <tr class="row100 body">
+                        <td class="cell100 column1">Indice de forme</td>
+                        <td class="cell100 column2">Calcule l'indice de forme i1 en fonction de la vitesse en mach</td>
+                        <td class="cell100 column3"><a href="code.html#indice_forme">Voir le code</a></td>
+                    </tr>
+                    
+                    <tr class="row100 body">
+                        <td class="cell100 column1">Coefficient balistique CBp1</td>
+                        <td class="cell100 column2">Calcule le coefficient balistique CBp1 en fonction du nombre de Mach</td>
+                        <td class="cell100 column3"><a href="code.html#coef_bal">Voir le code</a></td>
+                    </tr>
+
+                    <tr class="row100 body">
+                        <td class="cell100 column1">Décroissance de la vitesse</td>
+                        <td class="cell100 column2">Calcule la décroissance de la vitesse jusqu’à ce que la distance parcourue soit 300 m. Prend en paramètre la vitesse initiale (389,04 m/s)</td>
+                        <td class="cell100 column3">346,6 m/s lorsque les 300m sont atteint</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <footer style="display: flex;align-items: center;justify-content: center;">
+        <p style="position: fixed;bottom:0;right: 2%;animation: fadeIn ease 6s;color:#4548b0;font-family: 'montserrat';">Derghal Wissem & Mouchrit Riyad</p>
+    </footer>
+
+
+</body>
+
+</html>
